@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mebelsklad_bd.FXMLPostavschikController">
+     <children>
+        <Button fx:id="ButtonNext" layoutX="76.0" layoutY="161.0" onAction="#handleButtonAction" text="Next&gt;" />
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Pane prefHeight="41.0" prefWidth="320.0">
+         <children>
+            <Label layoutX="14.0" layoutY="9.0" text="Postavschik">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Button fx:id="ButtonPrev" layoutX="21.0" layoutY="161.0" onAction="#handleButtonAction" text="&lt;Prev" />
+      <TextField fx:id="ID" layoutX="21.0" layoutY="88.0" prefHeight="25.0" prefWidth="30.0" />
+      <TextField fx:id="Nazvanie" layoutX="76.0" layoutY="88.0" prefHeight="25.0" prefWidth="114.0" />
+      <TextField fx:id="Telefon" layoutX="229.0" layoutY="88.0" prefHeight="25.0" prefWidth="77.0" />
+      <Button fx:id="ButtonExit" layoutX="261.0" layoutY="161.0" onAction="#handleButtonExitAction" text="Exit" />
+      <Button fx:id="ButtonMenu" layoutX="170.0" layoutY="161.0" onAction="#ButtonMenu" text="Menu" />
+      <Label layoutX="240.0" layoutY="58.0" text="Telefon" />
+      <Label layoutX="109.0" layoutY="58.0" text="Nazvanie" />
+      <Label layoutX="30.0" layoutY="59.0" text="ID" />
+    </children>
+</AnchorPane>
